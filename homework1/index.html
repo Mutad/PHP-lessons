@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>homework1</title>
+
+  <style media="screen">
+    form{
+      background: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+
+</head>
+<body>
+  <form action="php/DaysInMonth.php" method="get">
+    <h1>Days in Month</h1>
+    <label for="month">Month number
+    <input type="number" max="12" min="1" name="month" id="month">
+  </label>
+
+  <label for="leapYear">
+    Is leap year:
+    <input type="checkbox" name="leapYear" id="leapYear">
+  </label>
+
+    <input type="submit" name="" value="submit">
+  </form>
+
+  <form action="php/isPalindrome.php" method="get">
+    <h1>Is palindrome</h1>
+    <label for="palindromeText">Text
+      <input type="text" name="word" id="palindromeText">
+    </label>
+    <input type="submit" name="" value="submit">
+  </form>
+
+  <form action="php/VovelCount.php" method="get">
+    <h1>vovelCount</h1>
+    <label for="vovelText">Text
+      <input type="text" name="word" id="vovelText">
+    </label>
+    <input type="submit" name="" value="submit">
+  </form>
+</body>
+</html>
